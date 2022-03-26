@@ -150,9 +150,9 @@
 //
 // Power Supply Control
 //
-#ifndef PS_ON_PIN
-  #define PS_ON_PIN                         PE8   // PS-ON
-#endif
+//#ifndef PS_ON_PIN
+//  #define PS_ON_PIN                         PE8   // PS-ON
+//#endif
 
 //
 // Power Loss Detection
@@ -219,8 +219,14 @@
 //
 // Temperature Sensors
 //
-#ifndef TEMP_0_PIN
-  #define TEMP_0_PIN                        PA2   // TH0
+#ifndef TEMP_0_CS_PIN
+  #define TEMP_0_CS_PIN PE8
+#endif
+
+#ifndef TEMP_0_CS_PIN
+  #ifndef TEMP_0_PIN
+    #define TEMP_0_PIN                        PA2   // TH0
+  #endif
 #endif
 #ifndef TEMP_1_PIN
   #define TEMP_1_PIN                        PA3   // TH1

@@ -223,11 +223,9 @@
   #define TEMP_0_CS_PIN PE8
 #endif
 
-#ifndef TEMP_0_CS_PIN
-  #ifndef TEMP_0_PIN
-    #define TEMP_0_PIN                        PA2   // TH0
-  #endif
-#endif
+// #ifndef TEMP_0_PIN
+//   #define TEMP_0_PIN                        PA2   // TH0
+// #endif
 #ifndef TEMP_1_PIN
   #define TEMP_1_PIN                        PA3   // TH1
 #endif
@@ -270,8 +268,11 @@
   #ifndef FAN1_PIN
     #define FAN1_PIN                        PB6   // Fan1
   #endif
-  #ifndef FAN2_PIN
-    #define FAN2_PIN                        PB5   // Fan2
+  // #ifndef FAN2_PIN
+  //   #define FAN2_PIN                        PB5   // Fan2
+  // #endif
+  #ifndef CASE_LIGHT_PIN
+    #define CASE_LIGHT_PIN PB5                  // Using FAN2 as lighting
   #endif
 #endif // SPINDLE_FEATURE || LASER_FEATURE
 

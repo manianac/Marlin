@@ -511,9 +511,9 @@
 //#define MAX31865_SENSOR_OHMS_1      100
 //#define MAX31865_CALIBRATION_OHMS_1 430
 
-#define TEMP_RESIDENCY_TIME         10  // (seconds) Time to wait for hotend to "settle" in M109
-#define TEMP_WINDOW                  1  // (°C) Temperature proximity for the "temperature reached" timer
-#define TEMP_HYSTERESIS              3  // (°C) Temperature proximity considered "close enough" to the target
+#define TEMP_RESIDENCY_TIME         20  // (seconds) Time to wait for hotend to "settle" in M109
+#define TEMP_WINDOW                  2  // (°C) Temperature proximity for the "temperature reached" timer
+#define TEMP_HYSTERESIS              5  // (°C) Temperature proximity considered "close enough" to the target
 
 #define TEMP_BED_RESIDENCY_TIME     20  // (seconds) Time to wait for bed to "settle" in M190
 #define TEMP_BED_WINDOW              1  // (°C) Temperature proximity for the "temperature reached" timer
@@ -600,9 +600,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-		#define DEFAULT_Kp 14.71
-		#define DEFAULT_Ki 0.75
-		#define DEFAULT_Kd 71.72
+    #define DEFAULT_Kp 14.23
+    #define DEFAULT_Ki 0.71
+    #define DEFAULT_Kd 71.73
   #endif
 #endif // PIDTEMP
 

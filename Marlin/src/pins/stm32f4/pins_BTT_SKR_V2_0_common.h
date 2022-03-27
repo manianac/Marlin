@@ -219,13 +219,9 @@
 //
 // Temperature Sensors
 //
-#ifndef TEMP_0_CS_PIN
-  #define TEMP_0_CS_PIN PE8
+#ifndef TEMP_0_PIN
+  #define TEMP_0_PIN                        PA2   // TH0
 #endif
-
-// #ifndef TEMP_0_PIN
-//   #define TEMP_0_PIN                        PA2   // TH0
-// #endif
 #ifndef TEMP_1_PIN
   #define TEMP_1_PIN                        PA3   // TH1
 #endif
@@ -521,13 +517,13 @@
 // Alter timing for graphical display
 #if IS_U8GLIB_ST7920
   #ifndef BOARD_ST7920_DELAY_1
-    #define BOARD_ST7920_DELAY_1             120
+    #define BOARD_ST7920_DELAY_1             150
   #endif
   #ifndef BOARD_ST7920_DELAY_2
-    #define BOARD_ST7920_DELAY_2              80
+    #define BOARD_ST7920_DELAY_2             100
   #endif
   #ifndef BOARD_ST7920_DELAY_3
-    #define BOARD_ST7920_DELAY_3             580
+    #define BOARD_ST7920_DELAY_3             650
   #endif
 #endif
 
@@ -581,3 +577,16 @@
 #define ESP_WIFI_MODULE_RESET_PIN           PC14
 #define ESP_WIFI_MODULE_GPIO0_PIN           PB10
 #define ESP_WIFI_MODULE_GPIO4_PIN           PB11
+
+#ifndef TEMP_0_MOSI_PIN
+  #define TEMP_0_MOSI_PIN                     PB15
+#endif
+#ifndef TEMP_0_MISO_PIN
+  #define TEMP_0_MISO_PIN                     PB14
+#endif
+#ifndef TEMP_0_SCK_PIN
+  #define TEMP_0_SCK_PIN                      PB13
+#endif
+#ifndef TEMP_0_CS_PIN
+  #define TEMP_0_CS_PIN                       PB12
+#endif

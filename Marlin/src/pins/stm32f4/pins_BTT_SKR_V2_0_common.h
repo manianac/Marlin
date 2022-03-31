@@ -142,6 +142,13 @@
 #endif
 
 //
+// Filament Width Sensor
+//
+#ifndef FILWIDTH_PIN
+  #define FILWIDTH_PIN                        PA5   // EXP2 SD-CS
+#endif
+
+//
 // Filament Runout Sensor
 //
 #define FIL_RUNOUT_PIN                      PC2   // E0DET
@@ -360,7 +367,7 @@
 #define EXP2_06_PIN                         PB2
 #define EXP2_07_PIN                         PA4
 #define EXP2_08_PIN                         PE7
-#define EXP2_09_PIN                         PA5
+//#define EXP2_09_PIN                         PA5
 #define EXP2_10_PIN                         PA6
 
 //

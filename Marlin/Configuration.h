@@ -928,7 +928,7 @@
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 842 }  // x16 microsteps
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4000, 1684 } // x32 microsteps except Z
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4000, 1690 } // x32 microsteps except Z
 
 /**
  * Default Max Feed Rate (mm/s)

@@ -250,9 +250,9 @@
 #ifndef HEATER_0_PIN
   #define HEATER_0_PIN                      PB3   // Heater0
 #endif
-#ifndef HEATER_1_PIN
-  #define HEATER_1_PIN                      PB4   // Heater1
-#endif
+// #ifndef HEATER_1_PIN
+//   #define HEATER_1_PIN                      PB4   // Heater1
+// #endif
 #ifndef HEATER_BED_PIN
   #define HEATER_BED_PIN                    PD7   // Hotbed
 #endif
@@ -271,11 +271,11 @@
   #ifndef FAN1_PIN
     #define FAN1_PIN                        PB6   // Fan1
   #endif
-  // #ifndef FAN2_PIN
-  //   #define FAN2_PIN                        PB5   // Fan2
-  // #endif
+  #ifndef FAN2_PIN
+    #define FAN2_PIN                        PB5   // Fan2
+  #endif
   #ifndef CASE_LIGHT_PIN
-    #define CASE_LIGHT_PIN PB5                  // Using FAN2 as lighting
+    #define CASE_LIGHT_PIN PB4                  // Using FAN2 as lighting
   #endif
 #endif // SPINDLE_FEATURE || LASER_FEATURE
 
